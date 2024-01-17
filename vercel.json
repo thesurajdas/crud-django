@@ -1,0 +1,13 @@
+{
+    "builds": [{
+        "src": "crudapp1/wsgi.py",
+        "use": "@vercel/python",
+        "config": { "maxLambdaSize": "15mb", "runtime": "python4.2.6" }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "crudapp1/wsgi.py"
+        }
+    ]
+}
