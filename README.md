@@ -1,3 +1,4 @@
+![alt text](https://github.com/thesurajdas/crud-django/blob/main/screenshot.jpg?raw=true)
 # Getting Started
 
 First clone the repository from Github and switch to the new directory:
