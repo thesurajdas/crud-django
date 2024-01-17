@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="bootstrap.min.css">
+<div class="container">
+    <h1 class="text-center mt-5">CRUD - Django, Python, SQLite</h1>
+    <div class="row mt-5">
+        <div class="col-sm-6">
+            <h2 class="alert alert-success text-center">Add New Student</h2>
+            <form method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="number" class="form-control" name="email" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add</button>
+            </form>
+        </div>
+        <div class="col-sm-6">
+            <h2 class="alert alert-danger text-center">List of Students</h2>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">No</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Password</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Suraj Das
+                        </td>
+                        <td>
+                            suraj4apps@gmail.com
+                        </td>
+                        <td>
+                            12345
+                        </td>
+                        <td>
+                            <a href="./edit/<%= item._id %>"><button class="btn btn-outline-warning">Edit</button></a>
+                            <a href="./delete/<%= item._id %>"><button
+                                    class="btn btn-outline-danger">Delete</button></a>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="bootstrap.min.css">
+    <div class="container mt-5 col-sm-4">
+        <h2 class="alert alert-success text-center">Update Student</h2>
+        <form action="/update/<%= data._id %>" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" name="name" id="name" value="<%= data.name %>" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email" value="<%= data.age %>" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" name="password" id="password" value="<%= data.fees %>" required>
+            </div>
+            <button type="submit" class="btn btn-success">Update</button>
+            <a href="/"><label class="btn btn-secondary">Back To Home</button></a>
+        </form>
+    </div>
